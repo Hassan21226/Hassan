@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#214237">
+  <title>لذة الأجداد | المنيو</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="topbar">
+  <a class="brand" href="#"><span class="brand-mark">✦</span><span>لذة الأجداد</span></a>
+  <nav><a href="#menu">قائمة الطعام</a><a href="#story">قصتنا</a><a class="admin-link" href="admin.html">إدارة المنيو ↗</a></nav>
+</header>
+<section class="hero" id="story">
+  <div class="hero-pattern"></div>
+  <div class="hero-content">
+    <div class="logo-tile"><span class="logo-pot">♨</span><strong>لذة<br>الأجداد</strong><small>LAT HAT AL-AJDAAD</small></div>
+    <p class="eyebrow">من سفرتنا إلى سفرتكم</p>
+    <h1>نكهة الماضي،<br><span>ولذّة كل يوم.</span></h1>
+    <p class="hero-desc">أطباق تحمل دفء البيت وأصالة المذاق.<br>اختر ما تشتهيه، ودع الباقي علينا.</p>
+    <div class="hero-points"><span>مكونات مختارة</span><i>✦</i><span>تحضير بكل عناية</span><i>✦</i><span>مذاق من تراثنا</span></div>
+  </div>
+</section>
+<main id="menu" class="menu-wrap">
+  <div class="section-heading"><div><p class="eyebrow gold">من مطبخنا إليكم</p><h2>قائمة الطعام</h2><p>أطباقنا المفضلة، محضّرة بكل حب.</p></div><div class="open-pill"><span></span> نكهة أصيلة كل يوم</div></div>
+  <div class="filter-row" id="filters"><button class="filter active" data-category="الكل">الكل</button><button class="filter" data-category="أكل شعبي">أكل شعبي</button></div>
+  <label class="search"><span>⌕</span><input id="search" placeholder="ما الذي تشتهيه اليوم؟" aria-label="ابحث عن طبق"></label>
+  <div class="product-grid" id="products"></div>
+  <div class="empty hidden" id="empty">لا توجد أطباق مطابقة للبحث.</div>
+</main>
+<footer><span class="brand-mark">✦</span><strong>لذة الأجداد</strong><p>من سفرتنا إلى سفرتكم</p><small>جميع الحقوق محفوظة © لذة الأجداد</small></footer>
+<script src="app.js"></script>
+</body>
+</html>
