@@ -67,7 +67,9 @@ export default defineConfig(async ({ command }) => {
       cloudflare({
         viteEnvironment: { name: "rsc", childEnvironments: ["ssr"] },
         inspectorPort: false,
-        config: {
+        ...(process.env.EXTERNAL_CLOUDFLARE === "1"
+          ? { configPath: ".cloudflare-deploy/wrangler.json" }
+          : { config: {
           ...localBindingConfig,
           ...(command === "serve"
             ? {
@@ -80,7 +82,7 @@ export default defineConfig(async ({ command }) => {
                 ],
               }
             : {}),
-        },
+        } }),
         ...(command === "serve"
           ? {
               auxiliaryWorkers: [
