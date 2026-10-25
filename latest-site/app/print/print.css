@@ -1,0 +1,77 @@
+.menu-print{max-width:920px;padding:24px;margin:auto;color:#703a00}
+.menu-print-tools{display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:14px;margin-bottom:20px;font-size:12px}
+.menu-print-tools label{display:flex;align-items:center;gap:8px;cursor:pointer}
+.menu-print-tools input{width:18px;height:18px;accent-color:#703a00}
+.menu-print-tools button{background:#703a00;color:#fff;min-height:44px}
+.menu-print-tools a{padding:10px 0;text-decoration:underline;text-underline-offset:4px}
+.menu-print-paper{background:#fffaf1;border:1px solid #cda368;outline:1px solid #ead7b9;outline-offset:-9px;padding:32px 44px 24px;box-shadow:0 8px 40px #703a000b}
+.menu-print-header{height:auto;max-width:none;margin:0;padding:0;display:flex;justify-content:center;align-items:center;gap:30px;text-align:center}
+.menu-print-header img{width:112px;height:140px;object-fit:contain;background:white;border-radius:4px}
+.menu-print-header h1{font:700 44px/1.3 Amiri,serif;color:#703a00;margin:10px 0 8px;overflow-wrap:anywhere}
+.menu-print-kicker{font-size:11px;color:#925112;letter-spacing:1px}
+.menu-print-header p{margin:0;font-size:14px;letter-spacing:2px;color:#78614e}
+.menu-print-divider{display:flex;align-items:center;gap:16px;color:#c97513;margin:24px 0 28px}
+.menu-print-divider:before,.menu-print-divider:after{content:'';height:1px;background:#dec49f;flex:1}
+.menu-print-section{margin:0 0 28px}
+.menu-print-section>h2{font:700 28px/1.6 Amiri,serif;color:#703a00;margin:0 0 8px;border-bottom:2px solid #e7ab58;padding:0 0 5px;break-after:avoid;page-break-after:avoid}
+.menu-print-item{display:flex;gap:16px;padding:15px 0;border-bottom:1px solid #eadbc4;break-inside:avoid;page-break-inside:avoid}
+.menu-print-item:last-child{border-bottom:0}
+.menu-print-copy{flex:1;min-width:0}
+.menu-print-line{display:flex;align-items:center;gap:12px}
+.menu-print-line h3{font:700 24px/1.5 Amiri,serif;margin:0;max-width:55%;overflow-wrap:anywhere}
+.menu-print-leader{flex:1;min-width:12px;border-bottom:1px dotted #c6a67f;align-self:center}
+.menu-print-amounts{display:flex;gap:20px;flex-shrink:0;align-items:center}
+.menu-print-amounts>div{display:flex;flex-direction:column;gap:3px;align-items:center;min-width:64px}
+.menu-print-amounts>div>span{font-size:10px;color:#78614e}
+.menu-print-amounts strong{font-size:16px;font-weight:600;white-space:nowrap;font-variant-numeric:tabular-nums}
+.menu-print-amounts small{font-size:9px;font-weight:400}
+.menu-print-description{margin:5px 0 0;font-size:11px;line-height:1.9;color:#78614e;white-space:pre-wrap;overflow-wrap:anywhere}
+.menu-print-servings{margin:4px 0 0;font-size:10px;color:#78614e}
+.menu-print-extras{margin-top:8px;font-size:10px;color:#78614e}
+.menu-print-extras>span{font-weight:600;display:block;margin-bottom:3px;color:#703a00}
+.menu-print-extras>div{display:flex;gap:8px;align-items:center;padding:2px 0;max-width:360px}
+.menu-print-extras>div>span:first-child{overflow-wrap:anywhere;min-width:0}
+.menu-print-extras b{white-space:nowrap;font-weight:500}
+.menu-print-photo{width:64px;height:64px;object-fit:cover;border-radius:5px;flex-shrink:0;margin-top:5px}
+.menu-print-footer{max-width:none;margin:26px 0 0;padding:14px 0 0;border-top:1px solid #dec49f;display:block;text-align:center;color:#78614e;font-size:10px}
+.menu-print-empty{text-align:center;padding:35px 0}
+@media(max-width:600px){.menu-print{padding:14px 10px}.menu-print-paper{padding:24px 20px}.menu-print-header{gap:16px}.menu-print-header img{width:80px;height:100px}.menu-print-header h1{font-size:31px}.menu-print-kicker{font-size:9px}.menu-print-line{gap:8px;flex-wrap:wrap}.menu-print-line h3{font-size:22px;max-width:100%;flex-basis:100%}.menu-print-amounts{gap:18px;margin-inline-start:auto}.menu-print-amounts>div{min-width:60px}.menu-print-photo{width:52px;height:52px}.menu-print-section>h2{font-size:25px}.menu-print-description{font-size:11px}}
+@media print{
+ @page{size:A4;margin:14mm}
+ .menu-print{max-width:none;margin:0;padding:0;color:#703a00!important}
+ .menu-print-tools{display:none!important}
+ .menu-print-paper{padding:6mm 7mm 4mm;outline-offset:-2mm;box-shadow:none;background:#fffaf1}
+ .menu-print-header{gap:7mm}.menu-print-header img{width:24mm;height:30mm}.menu-print-header h1{font-size:29pt}.menu-print-header p{font-size:10pt}.menu-print-kicker{font-size:8pt}
+ .menu-print-divider{margin:5mm 0}.menu-print-section{margin-bottom:6mm;break-inside:auto}.menu-print-section>h2{font-size:18pt;margin-bottom:1mm;padding-bottom:1mm;break-after:avoid}
+ .menu-print-items{break-before:avoid}.menu-print-item{padding:3mm 0;gap:4mm;break-inside:avoid}
+ .menu-print-line{flex-wrap:nowrap;gap:3mm}.menu-print-line h3{font-size:15pt;max-width:55%;flex-basis:auto}.menu-print-amounts{gap:5mm}.menu-print-amounts>div{min-width:15mm}.menu-print-amounts strong{font-size:11pt}.menu-print-amounts>div>span,.menu-print-amounts small{font-size:7pt}
+ .menu-print-description{font-size:8pt;line-height:1.7}.menu-print-servings,.menu-print-extras{font-size:7.5pt}.menu-print-photo{width:16mm;height:16mm}.menu-print-footer{font-size:7pt;margin-top:5mm;padding-top:3mm}
+ .menu-print-paper,.menu-print-paper *{-webkit-print-color-adjust:exact;print-color-adjust:exact}
+}
+
+.menu-print-amounts{flex-wrap:wrap;max-width:55%;justify-content:flex-end}.menu-print-amounts>div{max-width:120px}.menu-print-amounts>div>span{overflow-wrap:anywhere;text-align:center}.menu-print-line h3{flex-shrink:1}@media print{.menu-print-amounts{gap:3mm;max-width:60%}.menu-print-amounts>div{max-width:28mm}}
+
+.menu-print{max-width:640px}.menu-print-paper{padding:24px}.menu-print-header h1{font-size:38px}.menu-print-section>h2{font-size:34px}.menu-print-line{display:block}.menu-print-line h3{font-size:30px;max-width:100%}.menu-print-line>.menu-print-leader{display:none}.menu-print-amounts{max-width:100%;display:grid;gap:12px;margin-top:8px}.menu-print-amounts>div{max-width:none;display:flex;flex-direction:row;justify-content:space-between;gap:20px}.menu-print-amounts>div>span{font-size:20px;text-align:right}.menu-print-amounts strong{font-size:22px}.menu-print-amounts small{font-size:16px}.menu-print-description,.menu-print-servings{font-size:18px}.menu-print-extras{font-size:18px}.menu-print-extras>div{max-width:none}.menu-print-footer{font-size:15px}.export-hint{font-size:16px;line-height:1.8;color:#78614e}.export-results{display:grid;gap:18px;margin:20px 0}.export-results img{width:100%;height:auto;border:1px solid #ead9c4}.export-results a{display:block;text-align:center;background:#703a00;color:white;padding:14px;border-radius:8px;margin-top:10px;font-size:18px}@media print{.export-results,.export-hint{display:none}}
+
+@media print{
+ @page{size:A5 portrait;margin:8mm}
+ body{background:#fffaf1!important}
+ .menu-print{width:100%;max-width:none!important;padding:0!important;margin:0!important}
+ .menu-print-tools,.export-results,.export-hint,.export-error{display:none!important}
+ .menu-print-paper{padding:0!important;border:0;outline:0;box-shadow:none}
+ .menu-print-header{gap:4mm;break-inside:avoid}.menu-print-header img{width:22mm;height:27mm}.menu-print-header h1{font-size:28pt}.menu-print-header p{font-size:17pt}.menu-print-kicker{font-size:13pt;letter-spacing:0}
+ .menu-print-section>h2{font-size:28pt;line-height:1.5;break-after:avoid}
+ .menu-print-item{display:block;break-inside:avoid;page-break-inside:avoid;padding:5mm 0}
+ .menu-print-line{display:block}.menu-print-line h3{font-size:26pt;line-height:1.5;max-width:100%;break-after:avoid}
+ .menu-print-amounts{display:block;max-width:100%;margin-top:3mm}
+ .menu-print-amounts>div{display:flex;max-width:none;justify-content:space-between;align-items:baseline;gap:4mm;margin-bottom:3mm;break-inside:avoid}
+ .menu-print-amounts>div>span{font-size:23pt;line-height:1.5;min-width:0;overflow-wrap:anywhere}
+ .menu-print-amounts strong{font-size:24pt}.menu-print-amounts small{font-size:18pt}
+ .menu-print-description,.menu-print-servings,.menu-print-extras{font-size:21pt;line-height:1.65}
+ .menu-print-extras>div{max-width:none;break-inside:avoid}.menu-print-photo{width:28mm;height:28mm;float:left;margin:0 3mm 3mm 0}
+ .menu-print-footer{font-size:16pt;line-height:1.6;break-inside:avoid}
+}
+
+.print-header-contact .whatsapp-button{margin:10px auto}.whatsapp-address{font-size:14px;overflow-wrap:anywhere}@media print{.print-header-contact .whatsapp-button{background:#128c4a!important;color:white!important}.whatsapp-address{font-size:12pt}}
+
+.menu-print-header{flex-wrap:wrap}.print-header-contact{flex-basis:100%;text-align:center}.menu-print-header .whatsapp-address{margin-top:8px;letter-spacing:0;font-size:14px}
